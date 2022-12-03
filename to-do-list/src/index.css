@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-ubuntu;
+  }
+
+  #root {
+    @apply h-screen w-full;
+    @apply bg-gradient-to-r from-white to-grey;
+    @apply flex justify-center items-center;
+  }
+}
+
+.mainContainer {
+  @apply w-11/12 md:w-8/12 lg:w-1/2 h-[50vh] min-h-[400px] bg-white rounded-xl shadow-main relative;
+}
+
+.headerContainer {
+  @apply h-[20%] flex justify-center bg-softGrey items-center text-green text-4xl font-bold rounded-t-xl nonSelectable;
+}
+
+.selectContainer {
+  @apply w-full flex items-center justify-center h-1/4 border-b border-grey;
+}
+
+.selectContainer > select {
+  @apply w-1/2 h-3/5 px-4 text-2xl text-green shadow-main outline-none;
+}
+
+.listContainer {
+  @apply h-[60%];
+}
+
+.listContainer > ul {
+  @apply overflow-y-auto h-full customScroll;
+}
+
+.listItem {
+  @apply h-[25%] flex justify-between items-center bg-white border-b border-grey;
+}
+
+.listItem > input {
+  @apply h-full w-[80%] pl-4 text-xl flex items-center focus:outline-none;
+}
+
+.listItem > .checkIcon {
+  @apply w-[10%] h-full flex justify-center items-center border-r border-grey text-3xl cursor-pointer transition-all hover:text-green;
+}
+
+.listItem > .trashIcon {
+  @apply w-[10%] h-full flex justify-center items-center border-l border-grey text-darkGrey text-3xl cursor-pointer hover:text-red transition-all;
+}
+
+.customScroll::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+  background-color: #555;
+}
+
+.footerContainer {
+  @apply h-[20%] w-full flex justify-between items-center bg-green absolute bottom-0 rounded-b-xl;
+}
+
+.footerContainer > p {
+  @apply text-white text-2xl ml-10 md:ml-20 nonSelectable;
+}
+
+.footerContainer > span {
+  @apply text-white text-4xl cursor-pointer mr-6 hover:shadow-main hover:text-softGrey transition-all;
+}
+
+.nonSelectable {
+  user-select: none;
+  -webkit-user-select: none;
+}
