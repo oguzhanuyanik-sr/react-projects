@@ -2,8 +2,7 @@
 ### <a href="https://github.com/oguzhanuyanik-sr/react-projects/tree/main/src/user-management-system">Source code</a>
 ```
 Tailwind CSS, Axios, React (useState, useEffect), React Router(useLocation, useNavigate, useParams), React Toastify
-```
-```
+
 Express, Cors, UUID, Nodemon
 ```
 
