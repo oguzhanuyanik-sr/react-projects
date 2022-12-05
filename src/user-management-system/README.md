@@ -5,8 +5,7 @@
 - React (useState, useEffect)
 - React Router (useLocation, useNavigate, useParams)
 - React Toastify
-```
-```
+
 - Express
 - Cors
 - UUID
