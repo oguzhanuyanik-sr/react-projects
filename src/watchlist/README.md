@@ -1,8 +1,8 @@
 # Watchlist
 ```
-- Tailwind CSS
-- React (useState, useEffect)
+- React (useState, useEffect, createContext, useContext, useReducer)
+- React Router
 - React Toastify
 - React Icons
 ```
-### <a href="">Live Demo</a>
+### <a href="https://watchlistou.netlify.app/">Live Demo</a>
